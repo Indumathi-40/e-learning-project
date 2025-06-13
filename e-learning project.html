@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+    section{
+        padding: 60px 10%;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        scroll-behavior: smooth;
+    }
+
+    /* nav  */
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10% ;
+        background-color: cadetblue;
+        border-radius: 5px;;
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        }
+    nav{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    nav ul{
+        display: flex;
+        gap: 25px;
+        list-style: none;
+    }
+    nav a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative; 
+    }
+    
+    .btn{
+        background-color: white;
+        color: darkseagreen;
+        padding: 8px 15px;
+        border-radius: 20px;
+    }
+    .btn:hover{
+        background-color: darkseagreen;
+        color: white;
+    }
+    
+    /* hero section */
+    .hero{
+        height: 100vh;
+        background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6)) ,url('images (4).jpeg') no-repeat center/cover ;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 10%;
+    }
+    .hero h1{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .hero p{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .nav-links a::after{
+        content:'';
+        height: 2px;
+        background-color: white;
+        width: 0px;
+        position: absolute;
+        left: 0;
+        bottom: -5;
+
+    }
+
+    /* about */
+
+    .boxdiv{
+        width: 50%;
+        height: 300px;
+        background-color: antiquewhite;
+        border-radius: 80px;
+       padding-left: 100px;
+    }
+    .boxdiv h2{
+        text-align: center;
+        align-items: center;
+    }
+    /* cources */
+    .couimg{
+        height: 900%;
+        width: 30%;
+        padding-right: 180px;
+        padding-top: 30px;
+    }
+    .but1{
+        border-radius: 20px;
+        padding: 10px;
+        background-color: rgb(208, 71, 71);
+        color: aliceblue;
+        cursor: pointer;}
+    @keyframes fadein{
+        from{opacity: 0; transform:translateY(-30px);}
+        to{opacity: 1;transform: translateY(0);}
+    }
+
+    /* contect */
+    .contect{
+        padding: 50px;
+        align-items: center;
+        padding-left: 120px;
+        font-size: 35px;
+        color: rgb(220, 74, 20);
+    }
+
+    /* signup */
+
+    /* .sigbut{
+        width: 250px;
+        height: 400px;
+        box-shadow: 5px 5px 5px 5px rgb(25, 26, 26);
+        border-radius: 5px;
+        margin-left: 20px;
+        padding: 10px;
+         */
+    }
+    .sigbut button{
+        width: 300px;
+        height: 30px;
+    }
+    .sigbut but2{
+        width: 250px;
+        height: 400px;
+        box-shadow: 5px 5px 5px 5px rgb(235, 22, 22);
+        border-radius: 5px;
+        margin-left: 20px;
+        padding: 10px;
+        
+    }
+        
+</style>
+<body>
+
+    <!-- nav -->
+    <header>
+        <div class="logo">E-Learn</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cources">Courses</a></li>
+                <li><a href="#contect">Contect</a></li>
+                <li><a href="#sign up" class="btn">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero -->
+
+    <section class="hero" id="home">
+        <div class="hero-contant">
+            <h1>Learn Anytime,Anywhere</h1>
+            <p>Master new skills with curated content and expert instructors</p>
+            <a href="#cources" class="btn" style="text-decoration: none;">Explore Now</a>
+        </div>
+
+    </section>
+
+    <!-- about  -->
+
+    <section id="about">
+        <div class="about" >
+            <h2 style="text-align: center ; padding-top: 60px; color: brown; font-size: 30px;">About Us</h2><br><br>
+            <div class="abb" style="display: flex; gap: 50px;">
+                <div class="img" style="margin-top: 70px;">
+                    <img src="download (13).jpeg" alt="img">
+                </div>
+                <div>
+                    <p><h2><span style="color: chocolate;text-align: center;">What We Offer</span></h2><br><br>
+                        Expert-Led Courses: Learn from industry leaders and academic professionals.<br><br>
+                        
+                        Flexible Learning: Study at your own pace, from any device, anywhere in the world.<br><br>
+                        
+                        Certificates & Career Support: Earn credentials that add value to your resume and access career resources to help you grow.<br><Br>
+                        
+                        Community Learning: Join a vibrant community of learners and collaborate through forums, projects, and peer reviews.</p>
+    
+                </div>
+            </div>
+            
+                
+        </div>
+    </section>
+
+    <!-- cources -->
+
+    <section id="cources">
+        <div calss="cources" style="text-align: center; padding: 20px;">
+            <h2 style="color: brown; font-size: 30px;">Cources</h2><br>
+            <h3>Learn. Grow. Achieve.</h3><br>
+            <p style="font-size: 20px; justify-content: left;">At [YourPlatformName], we offer a wide range of online courses designed to help you gain real-world skills, earn certifications, and unlock new career opportunities. Whether you're starting from scratch or looking to upgrade your expertise, we have something for everyone.</p><br><br>
+            <div class ="couname" style="float: left; padding: 30px; height: 2ZA 00px; width: 200px; box-shadow: 5px 5px 5px 5px rgb(211, 105, 105); animation: f;">
+                <p>1.Technology & Programming</p><br>
+                <p>2.Business & Management</p><br>
+                <p>3.Creative & Design</p><br>
+                <p>4.Language & Communication</p><br>
+                <button class="but1">Apply Now</button>
+            </div>
+            <div class="couimg" style="float: right;">
+                <img src="download (2).jpeg" alt="img">
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- contect -->
+
+    <section id="contect">
+        <h2 style="text-align: center; font-size: 30px;padding-top: 200px ; padding-right: 260px;text-align:center ;align-items: center;padding-left: 250px;">Contect Me</h2>
+        <div class="contect" style="text-align: center; font-size: 40px; color: rgb(211, 105, 105); position: relative;right: 49px;">
+            <i class="fa-brands fa-instagram "></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </section>
+
+   
+   <section id="sign up">
+    <div class="signup">
+        <h1 style="text-align: center;font-size: 40px;">Signup</h1><br><br>
+        <div class="sigbut" style="text-align: center;">
+            <div class="but2" style="height: 400px; width: 400px;box-shadow: 5px 5px 5px 5px rgb(151, 143, 219);margin-left: 300px; ">
+            <button  style="width: 190px; height: 30px;">Email</button><br><br>
+            <button style="width: 190px; height: 30px;">create password</button><br><br>
+            <button style="opacity: 0.5;width: 190px; height: 50px;">conform possword</button><br><br>
+            <button style="background-color: rgb(22, 22, 161); color: white; width: 140px; height: 40px;">Signup</button><br><br>
+            <h3>Already have an account? <span style="color: blue;">Login</span></h3><br><br>
+            <p style="text-align: center;">--------------- or -----------------</p><br><br>
+            <button >  <i class="fa-brands fa-square-facebook"></i>  
+                Login with Facebook</i></button><br><br>
+            <button><i class="fa-brands fa-google"></i> Login with Google</button><br><br>
+
+            </div>
+            
+        </div>
+    </div>
+    </section>
+</body>
+</html>
